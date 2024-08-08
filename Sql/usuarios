@@ -1,0 +1,12 @@
+CREATE TABLE `usuarios` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `endereco` text NOT NULL,
+  `acesso` enum('user','funcionario') NOT NULL DEFAULT 'user',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`),
+  KEY `idx_email` (`email`),
+  KEY `idx_cpf` (`cpf`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci

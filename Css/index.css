@@ -1,0 +1,604 @@
+header {
+    position: fixed;
+    width: 100vw;
+    user-select: none;
+    margin-top: -150px;
+    z-index: 2;
+    user-select: none;
+}
+
+.header {
+    padding: 20px 100px;
+    width: 100vw;
+    user-select: none;
+}
+
+
+header .container:first-child .content {
+    height: 60px;
+    width: 100%;
+}
+
+header .container:nth-child(2n) a {
+    text-decoration: none;
+    color: var(--c4);
+    margin: 0 300px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    opacity: .85;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: var(--logo);
+    margin-left: 15px;
+    opacity: .85;
+}
+
+header ion-icon {
+    width: 23px;
+    height: 23px;
+    color: var(--c4);
+    margin: 0 5px;
+}
+
+nav {
+    margin: 104px 0;
+    position: fixed;
+    width: 100vw;
+    transition: .15s;
+    margin-top: -45px;
+    user-select: none;
+}
+
+nav.sticky {
+    opacity: 0;
+    transition: .3s;
+    z-index: -1000;
+}
+
+nav a {
+    color: var(--c4);
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 1px 5px;
+}
+
+/* */
+header .container .content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Adicionando estilo para o contêiner de pesquisa */
+.searchContainer {
+    display: flex;
+    border-bottom: 1px solid var(--c4); /* Adicionando uma linha em baixo */
+    padding: 5px; /* Adicionando um espaçamento interno */
+    display: none;
+    transition: opacity 0.2s ease-in-out, visibility 0s linear 0.2s; /* Adicionando transição para suavizar a exibição */
+    width: 100%;
+}
+
+/* Estilizando a lupa */
+#searchIcon {
+    width: 23px;
+    height: 23px;
+    color: var(--c4);
+    margin-right: 5px; /* Adicionando um espaçamento entre a lupa e a caixa de pesquisa */
+    cursor: pointer; /* Transformando o cursor em uma mãozinha ao passar por cima */
+}
+
+/* Estilizando a lupa preenchida */
+#searchIcon.search {
+    color: #000; /* Troque a cor para a desejada quando o ícone estiver preenchido */
+}
+
+/* Estilizando a caixa de pesquisa */
+#searchInput {
+    border: none;
+    border-bottom: 1px solid var(--c2);
+    outline: none;
+    background: transparent;
+    padding: 1px 2px;
+    font-size: 17px;
+    width: 400px;
+    color: var(--c4);
+    margin: 0 10px 0 0;
+}
+
+/* Exibindo o contêiner de pesquisa quando a classe "show" é adicionada */
+.searchContainer.show {
+    display: block;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Estilo para o input quando estiver em largura total */
+.fullwidth {
+    width: 100%;
+}
+
+#submitInput {
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    background: var(--c4);
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 1em;
+    transition: .5s;
+}
+
+#submitInput:hover {
+    color: var(--c0);
+    transition: .2s;
+    cursor: pointer;
+}
+
+#searchContainer input[type="number"] {
+    border: none;
+    border-bottom: 1px solid var(--c2);
+    outline: none;
+    background: transparent;
+    padding: 1px 2px;
+    font-size: 17px;
+    width: 150px;
+    color: var(--c4);
+    margin: 0 10px 0 0;
+}
+
+main {
+    margin: 150px auto 0 auto;
+    max-width: 1200px;
+    padding: 50px 0;
+}
+
+aside {
+    width: 100%;
+    background: var(--c0);
+    padding: 20px 40px;
+    cursor: default;
+    user-select: none;
+}
+
+aside .container .content {
+    margin: 0 5px;
+    max-width: 160px;
+}
+
+aside ion-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--c4);
+}
+
+aside h2 {
+    font-size: 1.3em;
+    color: var(--c4);
+}
+
+aside p, a {
+    font-size: .95em;
+    color: var(--c4);
+}
+
+aside a {
+    color: var(--c4);
+}
+
+article {
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section {
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    margin: 20px 0;
+}
+
+section .container, section a {
+    width: 250px;
+    height: 100%;
+    background: var(--c0);
+    transition: .4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section .container:hover, section a:hover {
+    box-shadow: 0 0 20px #00000025;
+    transition: .7s;
+}
+
+section .container .content:first-child {
+    height: 80%;
+    overflow: hidden;
+    user-select: none;
+}
+
+section .container .content {
+    width: 100%;
+    height: 20%;
+    background: #fff;
+    padding: 5px 15px;
+}
+
+section .container .content p {
+    font-size: .9em;
+    color: var(--c3);
+}
+
+section .container .content h2 {
+    font-size: 1.2em;
+    color: var(--c4);
+    font-weight: bolder;
+}
+
+section .container .content img {
+    width: 500px;
+    height: 500px;
+}
+
+footer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 0 100px;
+    text-align: center;
+}
+
+footer p {
+    font-size: .8em;
+    user-select: none;
+}
+
+footer a {
+    margin-left: 2px;
+}
+
+footer ion-icon {
+    margin: 0 1px 0 0;
+}
+
+/* USER MENU */
+.menu-perfil {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -5px 0 10px #00000033;
+    z-index: 10;
+    padding: 50px 20px;
+}
+
+.menus {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.menu {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.menu-superior {
+    height: 100px;
+    flex-direction: column;
+    
+}
+.user-area {
+    width: 100%;
+    gap: 5px;
+}
+
+.user-area {
+    align-content: center;
+}
+
+.user-area ion-icon {
+    width: 15px;
+    height: 15px;
+}
+
+.user-area h2 {
+    font-size: 1.8em;
+}
+
+.user-area p, .user-area a {
+    font-size: .9em;
+}
+
+.user-img ion-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 11;
+}
+
+.opt-area {
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.opt-content {
+    padding: 5px 0;
+    margin: 5px 0;
+    width: 100%;
+}
+
+.opt-content a {
+    text-decoration: none;
+    width: 100%;
+}
+
+.menu-inferior {
+    height: 50px;
+}
+
+.menu-inferior  a{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.posfinal {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px 0;
+}
+
+.article {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.article .section {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.article .section .produto {
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.edit {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.article .section .produto a {
+    text-decoration: none;
+    background: var(--c4);
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.article .section .produto .img {
+    width: 250px;
+    height: 80%;
+    overflow: hidden;
+}
+
+.article .section .produto .img img {
+    width: 500px;
+    height: 500px;
+}
+
+.article .section .produto .desc {
+    padding: 5px 20px;
+}
+
+.configimg {
+    flex-wrap: nowrap;
+}
+
+.configimg a {
+    text-decoration: none;
+    margin: 50px 10px;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    z-index: 10;
+    width: 300px;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    user-select: none;
+}
+
+.popup .container {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.popup .container .content {
+    width: 100%;
+}
+
+.popup .container .content:first-child {
+    flex-direction: column;
+}
+
+.popup .container .content button {
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    width: 100%;
+    background: var(--c4);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.popup .container .content .itenscarrinho {
+    width: 100%;
+}
+
+.popup .container .content .itenscarrinho img {
+    height: 80px;
+    width: 80px;
+}
+
+
+
+
+/* MEDIA */
+@media (max-width: 1100px) {
+    main {
+        margin: 150px auto 0 auto;
+        max-width: 800px;
+        padding: 50px 0;
+    }
+
+    aside {
+        width: 100%;
+        background: var(--c0);
+        padding: 20px 40px;
+        cursor: default;
+    }
+
+    aside .container .content {
+        margin: 0 3px;
+        max-width: 150px;
+    }
+
+    aside ion-icon {
+        width: 25px;
+        height: 25px;
+        color: var(--c4);
+    }
+    
+    aside h2 {
+        font-size: 1.2em;
+        color: var(--c4);
+    }
+}
+
+@media (max-width: 830px) {
+    main {
+        margin: 150px auto 0 auto;
+        max-width: 700px;
+        padding: 50px 0;
+    }
+
+    aside {
+        width: 100%;
+        background: var(--c0);
+        padding: 20px 40px;
+        cursor: default;
+    }
+
+    aside .container .content {
+        margin: 0 3px;
+        max-width: 150px;
+    }
+
+    aside ion-icon {
+        width: 25px;
+        height: 25px;
+        color: var(--c4);
+    }
+    
+    aside h2 {
+        font-size: 1.2em;
+        color: var(--c4);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 5px;
+        position: fixed;
+        width: 100vw;
+        user-select: none;
+        margin-top: -24px;
+        z-index: 2;
+    }
+    
+    .logo, h1 {
+        display: none;
+    }
+    
+    header ion-icon {
+        width: 30px !important;
+        height: 30px !important;
+        color: var(--c4);
+        margin: 0 15px;
+    }
+    
+    nav {
+        display: none !important;
+    }
+    
+    nav.sticky {
+        opacity: 0;
+        transition: .3s;
+        z-index: -1000;
+    }
+    
+    nav a {
+        color: var(--c4);
+        text-decoration: none;
+        margin: 0 20px;
+        padding: 1px 5px;
+    }
+
+    main {
+        margin: 24px auto 0 auto;
+        max-width: 800px;
+        padding: 50px 0;
+    }
+
+    aside {
+        width: 100%;
+        background: var(--c0);
+        padding: 20px 40px;
+        cursor: default;
+    }
+
+    aside .container .content {
+        margin: 0 3px;
+        max-width: 150px;
+    }
+
+    aside ion-icon {
+        width: 25px;
+        height: 25px;
+        color: var(--c4);
+    }
+    
+    aside h2 {
+        font-size: 1.2em;
+        color: var(--c4);
+    }
+
+    /* Estilizando a caixa de pesquisa */
+    #searchInput {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 16px;
+        width: 150px; /* Ajuste a largura conforme necessário */
+        color: var(--c4);
+        z-index: 10;
+    }
+}

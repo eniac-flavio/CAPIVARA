@@ -1,0 +1,101 @@
+* {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    max-width: 1140px;
+    margin: auto;
+    padding: 45px 0;
+}
+
+main > a {
+    gap: 5px;
+}
+
+.produto {
+    background: var(--c0);
+    margin: 15px 0;
+    width: 100%;
+}
+
+.produto a {
+    padding: 10px 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.container:first-child {
+    width: 75px;
+    height: 75px;
+    background: var(--c4);
+    overflow: hidden;
+}
+
+.container:first-child img {
+    width: 80px;
+    height: 80px;
+}
+
+.container:last-child {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    flex-direction: column;
+}
+
+.container:last-child .content:first-child {
+    width: 100%;
+}
+
+.esq p {
+    font-size: .9em;
+    color: var(--c3);
+    margin-right: 10px;
+}
+
+.esq h2 {
+    font-size: 1.6em;
+}
+
+.dir p {
+    font-size: .9em;
+    color: var(--c3);
+}
+
+.container:last-child .content:last-child {
+    width: 100%;
+    height: 100%;
+}
+
+.desc {
+    letter-spacing: .25px;
+}
+
+.notfound {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.notfound h4 {
+    font-size: 15em;
+    color: var(--c0);
+    letter-spacing: 10px;
+}
+
+.notfound h5 {
+    font-size: 3em;
+    color: var(--c0);
+    font-weight: bolder;
+}
+
+.notfound a {
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+}

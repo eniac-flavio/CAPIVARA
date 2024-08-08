@@ -1,0 +1,10 @@
+CREATE TABLE `amei` (
+  `id_amei` smallint(6) NOT NULL AUTO_INCREMENT,
+  `id_produto` smallint(6) NOT NULL,
+  `email_usuario` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_amei`),
+  KEY `id_produto` (`id_produto`),
+  KEY `email_usuario` (`email_usuario`),
+  CONSTRAINT `amei_ibfk_1` FOREIGN KEY (`id_produto`) REFERENCES `produtos` (`id`),
+  CONSTRAINT `amei_ibfk_2` FOREIGN KEY (`email_usuario`) REFERENCES `usuarios` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci

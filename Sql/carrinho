@@ -1,0 +1,13 @@
+CREATE TABLE `carrinho` (
+  `id_carrinho` int(11) NOT NULL AUTO_INCREMENT,
+  `email_usuarios` varchar(255) NOT NULL,
+  `id_produtos` smallint(6) NOT NULL,
+  `p_carrinho` int(11) NOT NULL,
+  `m_carrinho` int(11) NOT NULL,
+  `g_carrinho` int(11) NOT NULL,
+  PRIMARY KEY (`id_carrinho`),
+  KEY `id_produtos` (`id_produtos`),
+  KEY `email_usuarios` (`email_usuarios`,`id_produtos`),
+  CONSTRAINT `carrinho_ibfk_1` FOREIGN KEY (`email_usuarios`) REFERENCES `usuarios` (`email`),
+  CONSTRAINT `carrinho_ibfk_2` FOREIGN KEY (`id_produtos`) REFERENCES `produtos` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci

@@ -1,0 +1,178 @@
+* {
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--c4);
+    font-size: 1.5em;
+}
+
+header a ion-icon {
+    margin-right: 5px;
+}
+
+main {
+    user-select: none;
+}
+
+main {
+    height: 89.1%;
+}
+
+/* Separar o site em 2 lados */
+main > .container:first-child {
+    width: 60%;
+    height: 100%;
+}
+
+main > .container {
+    width: 38%;
+    height: 100%;
+}
+
+
+/* Separa em 2 o primeiro container */
+/* Imgs do lado */
+main > .container:first-child > .content:first-child {
+    width: 10%;
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 63%;
+}
+
+main > .container:first-child > .content:first-child aside {
+    width: 60px;
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+/* Img Central */
+main > .container:first-child > .content:first-child img {
+    width: 150px;
+    height: 150px;
+}
+
+main > .container:first-child > .content {
+    width: 60%;
+    height: 97%;
+    overflow: hidden;
+}
+
+main > .container:first-child > .content img {
+    width: 700px;
+    height: 700px;
+}
+/*
+main > .container:first-child > .content img:hover {
+    transform: scale(1.2);
+    transition: .7s;
+    cursor: zoom-in;
+}*/
+
+/* O segundo lado */
+main > .container > section:first-child > .container:first-child {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+main > .container > section:first-child h2 {
+    font-size: 2.5em;
+}
+
+main > .container > section:first-child ion-icon {
+    font-size: 2em;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+main > .container > section:first-child p {
+    font-size: .7em;
+}
+
+main > .container > section:first-child h3 {
+    font-size: 1.5em;
+}
+
+main #segcontent {
+    margin-bottom: 20px;
+}
+
+main #segcontent p {
+    text-align: justify;
+}
+
+main #tercontent .container {
+    flex-wrap: wrap;
+}
+
+main #tercontent .container ion-icon {
+    font-size: 1.2em;
+    margin-right: 5px;
+}
+
+main #tercontent .container h3 {
+    font-size: 1.2em;
+}
+
+main #tercontent .box {
+    border: 3px solid var(--c4);
+    width: 40px;
+    height: 40px;
+    margin: 0 5px 10px 5px;
+    cursor: pointer;
+}
+
+main #tercontent .boxcolor:first-child {
+    background: aquamarine;
+}
+main #tercontent .boxcolor {
+    background: orange;
+}
+main #tercontent .boxcolor:last-child {
+    background: plum;
+}
+
+main #tercontent .quantcontent ion-icon {
+    cursor: pointer;
+}
+
+main #tercontent .quantcontent input, main #tercontent .quantcontent ion-icon {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+main > div > section:last-child .content:first-child {
+    margin: 0 5px 0 0;
+    width: 20%;
+}
+
+main > div > section:last-child .content {
+    background: var(--c4);
+    height: 70px;
+    width: 80%;
+    cursor: pointer;
+    
+}
+
+main > div > section:last-child .content h2, main > div > section:last-child .content ion-icon {
+    color: #fff;
+    font-size: 2em;
+    transition: .4s
+}
+
+main > div > section:last-child .content:hover h2, main > div > section:last-child .content:hover ion-icon   {
+    color: var(--c0);
+    transition: .4s;
+}

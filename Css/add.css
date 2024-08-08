@@ -1,0 +1,109 @@
+* {
+    user-select: none;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    cursor: default;
+}
+
+.container {
+    width: 55%;
+    height: 100%;
+}
+
+.container:first-child {
+    width: 45%;
+    background: var(--c4);
+    overflow: hidden;
+}
+
+.container:last-child {
+    padding: 80px 50px;
+}
+
+.container:last-child .content div a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--c4);
+    user-select: none;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+input[type="text"], input[type="number"], input[type="url"], textarea {
+    border: none;
+    border-bottom: 1px solid var(--c4);
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    color: var(--c4);
+    margin-top: 30px;
+    cursor: text;
+    resize: none;
+    padding: 5px;
+}
+
+textarea {
+    height: 80px;
+}
+
+select {
+    appearance: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    text-align-last: center;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--c4);
+    margin-top: 30px;
+    text-align: center;
+}
+
+option {
+    appearance: none;
+    background: #fff;
+    text-align-last: center;
+    text-align: center;
+    padding: 5px 0;
+}
+
+select:focus {
+    appearance: none;
+    background: var(--c4);
+    color: #fff;
+    border-bottom: #fff;
+}
+
+input[type="submit"] {
+    border: none;
+    outline: none;
+    background: var(--c4);
+    color: #fff;
+    padding: 20px 0;
+    width: 425px;
+    font-size: 1em;
+    font-weight: bolder;
+    margin-top: 25px;
+    transition: .2s;
+}
+
+input[type="submit"]:hover {
+    color: var(--c0);
+    transition: .2s;
+    cursor: pointer;
+}
+
+input[type="submit"]:focus {
+    color: #fff;
+    transition: .2s;
+    padding: 15px 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    outline: 3px solid var(--c4);
+}
