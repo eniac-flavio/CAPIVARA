@@ -12,3 +12,6 @@ A loja oficial é [@srcapivarastore](https://www.instagram.com/srcapivarastore/)
 - **Flávio Henrique:** Responsável pelo FronEnd
 - **Matheus Teixeira:** Responsável pelo BackEnd
 - **Guilherme José:** Responsável pelos entregáveis
+
+### Entrega
+Desenvolvido para entrega no final do 2º semestre de 2023.
